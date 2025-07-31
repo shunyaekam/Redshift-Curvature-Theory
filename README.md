@@ -86,8 +86,8 @@ jupyter notebook curvature_work_analysis.ipynb
 
 ## 👥 Collaboration
 
-**Primary Researcher**: Zora Mehmi  
-**Theoretical Collaborator**: Eric Henning  
+**Primary Researcher**: Eric Henning   
+**Theoretical Collaborator**: Aryan Singh
 **Target Timeline**: Working prototype by 2025-07-26
 
 ## 📄 Research Context

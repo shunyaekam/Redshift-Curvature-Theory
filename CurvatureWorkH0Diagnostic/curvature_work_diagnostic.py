@@ -9,7 +9,7 @@ apparent H₀ measurements from strong-lens and supernova data.
 Working hypothesis: Observed redshift = expansion + "work" photons do escaping 
 curvature wells. The work component likely decreases over cosmic time.
 
-Author: Zora Mehmi
+Author:  Aryan Singh
 Date: 2025-07-30
 """
 

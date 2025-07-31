@@ -106,4 +106,9 @@ $RECYCLE.BIN/
 # Research-specific
 # Add any large astronomy data catalogs or simulation outputs here
 
+# Claude-related files
 claude.md
+CurvatureWorkH0Diagnostic/CLAUDE.md
+
+# Documentation
+Documentation/clean_conversations.md
