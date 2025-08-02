@@ -32,20 +32,17 @@ z_observed = z_expansion + z_curvature_work
 ```
 📦 Redshift Curvature Theory/
 ├── 📂 Documentation/
-│   ├── 📄 clean_conversations.md          # Complete project history & technical discussions
 │   └── 📄 THEORY_REFERENCE.md             # Comprehensive theoretical framework
 ├── 📂 CurvatureWorkH0Diagnostic/          # Main simulation & analysis code
 │   ├── 🐍 curvature_work_diagnostic.py    # Primary analysis script
 │   ├── 📓 curvature_work_analysis.ipynb   # Interactive Jupyter notebook
 │   ├── 📄 requirements.txt                # Python dependencies
-│   └── 📄 CLAUDE.md                       # Subdirectory development guidance
 ├── 📂 Reference papers/                   # Key theoretical foundations
 │   ├── 📄 positive mass.pdf               # Positive mass theorem (Almaraz & Wang)
 │   ├── 📄 Hubble tension.pdf              # Current observations
 │   ├── 📄 null geodesics.pdf              # Geometric foundations
 │   └── 📄 [Additional papers...]
 ├── 📄 README.md                           # This comprehensive overview
-└── 📄 CLAUDE.md                          # Main development guidance
 ```
 
 ---
@@ -156,11 +153,9 @@ jupyter notebook curvature_work_analysis.ipynb
 - [x] Comprehensive project documentation
 
 ### 🔄 In Progress
-- [ ] **Real Data Integration**: Replace simulated Pantheon+ with actual host galaxy masses
 - [ ] **Extended Samples**: Add TDCOSMO lens systems beyond H0LiCOW
-- [ ] **Time Evolution**: Implement cosmic time dependence in corrections
 
-### 🎯 Future Development (Next 6 Months)
+### 🎯 Future Development Ideas (Next 6 Months)
 - [ ] **Kretschmann Scalar Implementation**: Local curvature threshold modeling
 - [ ] **Global Curvature Field**: Energy storage and redistribution modeling
 - [ ] **Black Hole Applications**: Event horizon and singularity predictions
