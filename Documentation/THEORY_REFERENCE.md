@@ -1,293 +1,240 @@
-# Curvature-Work Theory of Cosmological Redshift: Complete Reference
+# Curvature-Work Theory of Cosmological Redshift
 
-**Authors**: Eric Henning (SNHU), Aryan Singh (Open University)  
-**Document Version**: 1.0  
-**Date**: July 2025
+**Authors**: Eric Henning (SNHU), Aryan Singh (The Open University)  
+**Document Version**: 3.0  
+**Date**: August 2025
 
 ## Abstract
 
-This document presents a comprehensive theoretical framework for an alternative interpretation of cosmological redshift based on curvature-work effects. The theory proposes that observed redshift consists of two components: standard cosmological expansion and energy loss from photons performing "work" to escape gravitational potential wells. This framework addresses the Hubble Tension and provides a geometric foundation for understanding photon behavior in curved spacetime.
+We present a theoretical framework proposing that observed cosmological redshift consists of two distinct physical components: standard cosmological expansion and energy loss from photons performing geometric "work" to escape gravitational potential wells. This curvature-work mechanism provides a potential resolution to the Hubble Tension through systematic reinterpretation of redshift measurements, without invoking new particle species and potentially reducing or obviating the need for dark energy (subject to observational tests). The theory extends General Relativity by incorporating a non-arbitrary curvature field embedded within spacetime structure, leading to emergent null propagation conditions and novel predictions for photon behavior in extreme gravitational environments.
 
 ---
 
-## Table of Contents
+## Claim Strength Legend
 
-1. [Core Theoretical Framework](#1-core-theoretical-framework)
-2. [Mathematical Formulation](#2-mathematical-formulation)
-3. [Geometric Foundation](#3-geometric-foundation)
-4. [Observational Implications](#4-observational-implications)
-5. [Comparison with Standard Model](#5-comparison-with-standard-model)
-6. [Key Research Questions](#6-key-research-questions)
-7. [Theoretical Extensions](#7-theoretical-extensions)
-8. [Implementation Framework](#8-implementation-framework)
+**Established**: Standard GR/cosmology results we recover.
+**Hypothesis**: Core curvature-work framework and H₀ bias mechanism.
+**Speculative**: Hypersphere program, entanglement link, information-flow remarks.
+
+We will clearly tag sections accordingly.
 
 ---
 
-## 1. Core Theoretical Framework
+## 1. Theoretical Foundation
 
-### 1.1 Fundamental Hypothesis
+### 1.1 Core Hypothesis
 
-**Primary Assertion**: Observed cosmological redshift (z) has two distinct physical components:
+The fundamental premise of curvature-work theory is that cosmological redshift z_observed decomposes as:
 
 ```
 z_observed = z_expansion + z_curvature_work
 ```
 
-Where:
-- `z_expansion`: Traditional cosmological expansion component
-- `z_curvature_work`: Energy loss from photons escaping gravitational/curvature wells
+where z_expansion represents traditional cosmological expansion and z_curvature_work accounts for photon energy loss during escape from gravitational potential wells. This decomposition challenges the standard interpretation that redshift serves as a direct proxy for cosmic expansion rates.
 
-### 1.2 Curvature-Work Mechanism
+### 1.2 The Curvature Field
 
-**Physical Process**: Photons lose energy performing geometric "work" to achieve null propagation (ds² = 0) when escaping regions of high spacetime curvature.
+We propose a geometric curvature field C(x,t) that is intrinsically woven into spacetime structure, distinct from auxiliary scalar fields such as the Higgs or inflaton fields. This field possesses three key properties:
 
-**Key Principle**: Null propagation becomes **emergent** rather than fundamental:
-- In flat spacetime: photons naturally propagate at speed c
-- In curved spacetime: photons must expend energy to maintain null geodesic paths
-- In extreme curvature: photons may lose their null nature entirely
+1. **Geometric Embedding**: The field is topologically integrated within 4-dimensional spacetime rather than imposed as an external overlay
+2. **Causal Permission**: The field determines local conditions for null propagation, effectively controlling where spacetime structure permits causal relationships
+3. **Energy Storage**: The field can absorb and redistribute photon energy globally, maintaining cosmic energy conservation
 
-### 1.3 Energy Conservation Framework
+### 1.3 Emergent Null Propagation
 
-**Global Energy Conservation**: Energy lost by escaping photons is absorbed by the curvature field itself, not dissipated thermodynamically.
+Under this framework, the null condition ds² = 0 becomes emergent rather than fundamental. In regions of extreme curvature, photons may lose their null nature as they expend energy to maintain propagation paths. This leads to a critical insight: spacetime structure exists meaningfully only where photons can achieve null propagation.
 
-**Curvature Field Properties**:
-- Non-arbitrary geometric field embedded within 4D spacetime
-- Not an external scalar field (like Higgs or inflaton)
-- Determines permission for causal structure existence
-- Stores and redistributes energy across cosmic evolution
+## 2. Mathematical Framework
 
----
+### 2.1 Metric Modulation
 
-## 2. Mathematical Formulation
+The curvature field influences spacetime geometry through metric modulation in extreme curvature regions. The essential line element contracts for light-like curves according to local curvature field strength, leading to effective, curvature-dependent responses in the metric components g_μν **within** the GR framework. The Einstein equations are recovered in the appropriate limits; any deviations are emergent/effective rather than fundamental modifications.
 
-### 2.1 Primary Correction Model
+### 2.2 Energy Conservation
 
-**H₀ Correction Formula**:
+Photon energy lost during curvature escape is absorbed by the curvature field itself:
+
 ```
-H₀_corrected = H₀_apparent × (1 - α × f(environment_depth))
+∂E_photon/∂τ + ∂E_curvature/∂τ = 0
 ```
 
-**Parameters**:
-- `α`: Correction strength parameter (typical values: 0.01 - 0.10)
-- `f(depth)`: Functional form of environment dependence
-- `environment_depth`: Normalized proxy for gravitational potential depth
+This global energy bookkeeping is a speculative avenue we will explore in relation to quantum non-local correlations; **it is not a claim of explanation at this stage.**
 
-**Functional Forms**:
-- **Linear**: `f(depth) = depth_normalized`
-- **Quadratic**: `f(depth) = depth_normalized²`
-- **Exponential**: `f(depth) = 1 - exp(-2 × depth_normalized)`
+### 2.3 Threshold Physics
 
-### 2.2 Environment Depth Proxies
+We hypothesize the existence of a critical curvature threshold, potentially involving the Kretschmann scalar:
 
-**Strong Lens Systems**: `log σ_v` (velocity dispersion in km/s)
-**Supernova Systems**: `log M_host` (host galaxy mass in solar masses)
-
-**Normalization**: All proxies mapped to [0,1] range for consistent comparison
-
-### 2.3 Kretschmann Scalar Threshold
-
-**Critical Curvature**: Local scalar curvature threshold K_crit where null propagation begins to fail.
-
-**Threshold Condition**:
 ```
 K = R_abcd R^abcd ≥ K_crit
 ```
 
-When K > K_crit:
-- Photons begin losing energy to maintain null propagation
-- Coordinate speed of light may differ from local speed c
-- Extreme cases: photons become trapped as massive objects (E = mc²)
+Beyond this threshold, photons can no longer maintain null propagation, transitioning to **effectively massive** behavior in extreme curvature, consistent with E = mc²; this is a hypothesis to be formalized.
 
-### 2.4 Temporal Evolution
+## 3. Observational Implications
 
-**Cosmic Time Dependence**: Curvature wells become shallower over cosmic time, leading to:
-- Early photons: Higher energy loss (more work required)
-- Later photons: Lower energy loss (less work required)
-- This explains apparent acceleration in expansion measurements
+### 3.1 Hubble Tension Resolution
 
----
+The theory naturally explains the Hubble Tension through systematic measurement biases:
 
-## 3. Geometric Foundation
+- **Early Universe (CMB)**: Measurements include maximum curvature-work from deeper primordial wells
+- **Late Universe (SNe/Cepheids)**: Measurements reflect reduced curvature-work from shallower contemporary wells
+- **Systematic Bias**: Apparent H₀ discrepancy arises from different curvature-work contributions rather than new physics
 
-### 3.1 Non-Riemannian Framework
+These statements denote a working hypothesis; quantitative fits await the full data integration described in §6.
 
-**Geometric Structure**: Extension of General Relativity maintaining core predictive power while allowing:
-- Non-smooth metric behavior across curvature boundaries
-- Emergent null condition from curvature field dynamics
-- Global topology embedded within 4D spacetime
+### 3.2 Observational Signatures
 
-### 3.2 Hypersphere/N-Sphere Topology
+Primary observational tests focus on:
 
-**5-Dimensional Universe Hypothesis**: Our 4D experience as projection of hypersphere
-- Not string theory (avoids arbitrary compact dimensions)
-- Observable hypersphere volume through normal space
-- Photons as geodesics representing volume distribution
+1. **Strong Gravitational Lensing**: Time-delay measurements in H0LiCOW systems provide direct probes of curvature-work effects
+2. **Environment Correlation**: Systematic variation of apparent H₀ with host galaxy mass and velocity dispersion
+3. **Redshift Evolution**: Temporal changes in curvature-work contribution across cosmic history
 
-**Volume Conservation**: Photon redshift represents quantum distribution of hypersphere volume
+### 3.4 Falsifiable Predictions
 
-### 3.3 Positive Mass Theorem Applications
+**Key Testable Predictions:**
 
-**Non-Smooth Metrics**: Based on Almaraz & Wang (2025) work on positive mass theorems for non-smooth metrics across compact hypersurfaces.
+1. **H₀ decreases monotonically with environment depth** after correcting for lens-model systematics (sign and slope specified).
 
-**Key Results**:
-- Mass conservation across curvature discontinuities
-- Geometric interpretation of energy storage in curvature fields
-- Mathematical framework for non-singular curved regions
+2. **Chromatic residuals in time-delay distances** if curvature-work couples to frequency-dependent paths (bounds to be derived).
 
----
+3. **No degradation of CMB acoustic peak fits** when curvature-work is turned off at recombination (GR limit).
 
-## 4. Observational Implications
+### 3.3 Black Hole Physics
 
-### 4.1 Hubble Tension Resolution
+The theory predicts novel black hole interior structure:
 
-**Systematic Bias Explanation**: If late-time H₀ measurements include less curvature-work than early-time measurements:
-- CMB-derived H₀ (early universe): Includes maximum curvature work
-- SN/Cepheid H₀ (late universe): Includes reduced curvature work
-- Results in apparent tension without new physics
+- **Energy Gain Mechanism**: Photons gain energy approaching event horizons until null propagation becomes impossible
+- **Singularity Redefinition**: Traditional singularities become regions where photons exist as massive objects
+- **Information Resolution**: Geometric energy storage offers a **speculative** angle on information retention/flow; **no resolution is claimed.**
 
-### 4.2 Observational Tests
+## 4. Hypersphere Geometric Framework (Speculative Program)
 
-**Primary Targets**:
-1. **Strong Lens Time-Delays**: H0LiCOW/TDCOSMO systems
-2. **Supernova Host Environments**: Pantheon+ galaxy mass correlations
-3. **Black Hole Environments**: Event horizon photon behavior
-4. **Primordial Black Holes**: Early universe curvature work signatures
+### 4.1 Higher-Dimensional Structure
 
-**Observable Signatures**:
-- Environment-dependent H₀ measurements
-- Correlation between host galaxy mass and apparent H₀
-- Time evolution of curvature work contribution
+We propose that observable 4-dimensional spacetime represents a projection of an underlying 5-dimensional hypersphere. This differs fundamentally from string theory approaches by avoiding arbitrary compact dimensions and maintaining observational accessibility of the full geometric structure.
 
-### 4.3 Black Hole Interior Predictions
+### 4.2 Photon-Volume Relationship
 
-**Singularity Redefinition**: No true singularities, instead:
-- Photons gain energy approaching event horizon
-- At some point, photons cannot maintain c due to energy gain
-- "Singularity" becomes region where photons exist as massive objects
-- Provides geometric explanation for information paradox
+Within this framework, photons serve as elementary geodesics representing the hypersphere's volume distribution. Redshift emerges from photons "shredding" hypersphere volume during propagation, leading to quantum volume redistribution effects.
 
----
+## 5. Cosmological Consequences
 
-## 5. Comparison with Standard Model
+### 5.1 Inflation Compatibility
 
-### 5.1 Preserved Elements
+The theory preserves inflationary cosmology while revising post-inflationary expansion interpretation:
 
-**General Relativity**: Core framework maintained
-**CMB Physics**: Peak structure remains intact
-**Local Physics**: No change to well-tested regimes
-**Causality**: Fundamental light cone structure preserved
+- **CMB Physics**: Peak structure remains intact within the General Relativity limit
+- **E-fold Budget**: Some inferred expansion may reflect curvature-work misinterpretation
+- **Late-Time Revision**: Primary modifications affect post-inflationary epoch expansion history
 
-### 5.2 Modified Elements
+### 5.2 Dark Energy Alternative
 
-**Redshift Interpretation**: Not purely expansion-driven
-**Inflation Requirements**: Reduced e-fold count needed
-**Dark Energy**: May partially explain apparent acceleration
-**Age Estimates**: Universe age calculations require revision
+Curvature-work effects may account for apparent cosmic acceleration without requiring dark energy:
 
-### 5.3 Hubble Tension Approaches
+- **Systematic Redshift**: Late-time measurements underestimate curvature-work contribution
+- **Temporal Evolution**: Shallowing curvature wells create apparent acceleration signatures
+- **Energy Budget**: Could reduce or obviate the inferred dark-energy component if supported by data; this is a testable alternative, not an established result.
 
-**Standard Approaches**: New physics, systematic errors, void hypotheses
-**Curvature-Work Approach**: Geometric reinterpretation of existing observations
-**Advantage**: No new fundamental physics required
+### 5.3 Structure Formation
 
----
+The theory predicts enhanced early structure formation through:
 
-## 6. Key Research Questions
+- **Primordial Black Holes**: Curvature-work energy release creates fertile formation environments
+- **Energy Concentration**: Local energy absorption promotes gravitational collapse
+- **Galaxy Formation**: High-redshift luminous galaxies (e.g., JADES-GS-z14-0) supported by energy release mechanisms
 
-### 6.1 Theoretical Questions
+## 6. Current Research Program
 
-1. **Null Propagation Breakdown**: At what curvature threshold does ds² = 0 become impossible?
-2. **Energy Accounting**: How exactly does the curvature field absorb and redistribute photon energy?
-3. **Quantum Entanglement**: Does global energy conservation through curvature fields explain non-local correlations?
-4. **Information Paradox**: How does geometric mass storage resolve black hole information problems?
+### 6.1 Computational Implementation
 
-### 6.2 Observational Questions
+We have developed the CurvatureWorkDiagnostic simulation framework for testing theoretical predictions against observational data. Initial **mock-data** experiments reproduce the expected qualitative trends; **correlation claims await real H0LiCOW/TDCOSMO and Pantheon+ integrations.**
 
-1. **Environment Correlation**: Do H₀ measurements systematically vary with host environment depth?
-2. **Redshift Evolution**: How does curvature-work contribution change with cosmic time?
-3. **Cross-Validation**: Do independent distance ladder measurements show consistent biases?
-4. **Black Hole Tests**: Can we observe curvature-work effects near event horizons?
+### 6.2 Data Integration
 
-### 6.3 Cosmological Questions
+Current efforts focus on:
 
-1. **Early Universe**: How did curvature wells evolve during inflation?
-2. **Structure Formation**: Did curvature-work effects influence galaxy formation?
-3. **Dark Energy**: What fraction of apparent acceleration is geometric?
-4. **Big Bang**: What does curvature-work theory predict for t = 0?
+- **H0LiCOW Analysis**: 6 strong lens systems with velocity dispersion proxies
+- **Pantheon+ Integration**: Host galaxy mass correlation studies
+- **TDCOSMO Expansion**: Extended time-delay sample analysis
 
----
+### 6.3 Parameter Exploration
 
-## 7. Theoretical Extensions
+Systematic investigation of correction strength parameters and functional forms relating environment depth to curvature-work magnitude.
 
-### 7.1 Quantum Implications
+### 6.4 Workflow Implementation
 
-**Photon Mass Transition**: Mechanism for massless → massive particle conversion
-**Energy Levels**: Quantum description of curvature work
-**Wave-Particle Duality**: Geometric interpretation of photon behavior
+**Drafting pipeline**: Google Docs → LaTeX (arXiv-ready). LaTeX owner: Aryan.
 
-### 7.2 Primordial Black Holes
+## 7. Open Research Questions
 
-**Formation Mechanism**: Early universe curvature work creates fertile environment
-**Energy Release**: Explains how primordial BHs could form without massive stars
-**Hawking Radiation**: Geometric interpretation preserving core insights
+### 7.1 Theoretical Development
 
-### 7.3 Cosmological Constant
+- **Threshold Definition**: Precise mathematical formulation of curvature breakdown conditions
+- **Energy Accounting**: Formal mass concept adaptation (Bondi mass vs. novel definitions)
+- **Implementation Method**: Optimal mathematical representation (metric modifications, propagation factors, geometric variables)
 
-**Geometric Origin**: Apparent acceleration from curvature-work misinterpretation
-**Time Evolution**: Why Λ appears to change over cosmic history
-**Fine-Tuning**: Natural explanation for cosmological constant problem
+### 7.2 Observational Validation
 
----
+- **Lens Systems**: Identification of curvature-work signatures in time-delay distances and mass inference
+- **Cross-Validation**: Consistency tests across independent distance measurement methods
+- **Chromatic Effects**: Wavelength-dependent curvature-work variations
 
-## 8. Implementation Framework
+### 7.3 Cosmological Applications
 
-### 8.1 Computational Models
+- **Early Universe**: Curvature field evolution during inflation
+- **Structure Impact**: Influence on galaxy formation and evolution
+- **Big Bang Physics**: Theoretical implications for cosmic origin scenarios
 
-**Current Implementation**: CurvatureWorkDiagnostic simulation
-**Data Sources**: H0LiCOW lenses, Pantheon+ supernovae
-**Parameter Space**: α ∈ [0.01, 0.10], multiple functional forms
+## 8. Research Standards and Methodology
 
-### 8.2 Statistical Analysis
+Our research adheres to rigorous scientific standards:
 
-**Correlation Tests**: Environment depth vs. apparent H₀
-**Error Propagation**: Proper uncertainty handling throughout
-**Model Comparison**: Bayesian comparison with standard ΛCDM
+- **Empirical Primacy**: All theoretical developments must remain consistent with credible observational data
+- **Mathematical Rigor**: Theoretical frameworks require solid mathematical foundations avoiding ad-hoc explanations
+- **General Relativity Compatibility**: Core GR predictions must be preserved within appropriate limits
+- **Observational Focus**: Strong gravitational lensing provides primary empirical validation pathway
 
-### 8.3 Future Development
+## 9. Project Timeline and Deliverables
 
-**Real Data Integration**: Replace simulated with actual Pantheon+ masses
-**Extended Samples**: TDCOSMO collaboration data
-**Time Evolution**: Implement cosmic time dependence
-**Cross-Validation**: Test against other distance measurements
+### 9.1 Near-Term Goals (6-12 months)
 
----
+**Target**: First arXiv submission within 5–12 months (as jointly discussed), contingent on data readiness.
 
-## 9. Conclusion
+- Complete real observational data integration
+- Publish first diagnostic analysis results
+- Submit initial theoretical framework to arXiv
 
-The curvature-work theory provides a geometrically motivated framework for understanding cosmological redshift that:
+### 9.2 Medium-Term Objectives (1-2 years)
 
-1. **Addresses the Hubble Tension** through systematic reinterpretation rather than new physics
-2. **Maintains General Relativity** while extending it to non-smooth regimes
-3. **Predicts Observable Signatures** testable with current and future data
-4. **Provides Unified Framework** connecting quantum mechanics, gravity, and cosmology
+- Peer-review publication in Physical Review Letters
+- Extended observational sample analysis
+- Theoretical refinement and mathematical formalization
 
-This theory represents a paradigm shift from expansion-only models toward a more nuanced understanding of photon behavior in curved spacetime, with profound implications for our understanding of cosmic evolution and the nature of space and time itself.
+### 9.3 Long-Term Vision (2-5 years)
+
+- Comprehensive cosmological parameter constraint analysis
+- Independent experimental validation
+- Broader theoretical implications exploration
+
+## 10. Conclusions
+
+The curvature-work theory of cosmological redshift offers a geometrically motivated framework for understanding cosmic expansion measurements that addresses the Hubble Tension through systematic reinterpretation rather than new fundamental physics. By extending General Relativity with an embedded curvature field, the theory provides testable predictions for photon behavior in extreme gravitational environments while maintaining compatibility with established cosmological observations. Current computational analysis demonstrates promising empirical signatures, warranting continued theoretical development and observational validation.
 
 ---
 
 ## References
 
-1. Almaraz, S. & Wang, S. (2025). "A positive mass theorem for non-smooth metrics on asymptotically flat manifolds with non-compact boundary." arXiv:2506.20453v1
-2. H0LiCOW Collaboration. Multiple papers on time-delay cosmography
-3. Pantheon+ Collaboration. Supernova cosmology datasets
-4. Various papers on Hubble tension, observational cosmology, and null geodesics
-5. Singh, A. & Henning, E. (2025). "Curvature-Work Diagnostic Analysis." [In preparation]
+1. H0LiCOW Collaboration. "H0LiCOW – XIII. A 2.4% measurement of H₀ from lensed quasars." *Monthly Notices of the Royal Astronomical Society* (2020)
+2. Pantheon+ Collaboration. "The Pantheon+ Supernova Sample." *Astrophysical Journal* (2022)
+3. Riess, A. G., et al. "Comprehensive Measurement of the Local Value of the Hubble Constant." *Astrophysical Journal Letters* (2022)
+4. Planck Collaboration. "Planck 2018 results. VI. Cosmological parameters." *Astronomy & Astrophysics* (2020)
+5. TDCOSMO Collaboration. "TDCOSMO. V. Strategies for precise and accurate measurements of the Hubble constant." *Astronomy & Astrophysics* (2021)
 
 ---
 
-**Contact Information**:
+**Correspondence**: 
 - Eric Henning: eric.henning@snhu.edu
 - Aryan Singh: aryan.s.shisodiya@gmail.com
 
-**Project Repository**: Available upon request for collaboration
-**Target Publication**: Physical Review Letters (peer-review), arXiv (preprint)
+**Project Status**: Active theoretical and computational development, first results anticipated Q4 2025
