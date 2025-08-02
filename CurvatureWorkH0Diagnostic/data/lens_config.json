@@ -4,8 +4,7 @@
     "HE0435-1223": "data/HE0435_Ddt_AO+HST.dat", 
     "PG1115+080": "data/PG1115_AO+HST_Dd_Ddt.dat",
     "RXJ1131-1231": "data/RXJ1131_AO+HST_Dd_Ddt.dat",
-    "WFI2033-4723": "data/wfi2033_dt_bic.dat",
-    "B1608+656": "data/B1608_analytic_PDF.txt"
+    "WFI2033-4723": "data/wfi2033_dt_bic.dat"
   },
   "lens_metadata": {
     "J1206+4332": {
@@ -88,8 +87,7 @@
     "HE0435_Ddt_AO+HST.dat": "Single column format with time-delay distances",
     "PG1115_AO+HST_Dd_Ddt.dat": "Two column format: 'Dd[Mpc] Ddt[Mpc]'",
     "RXJ1131_AO+HST_Dd_Ddt.dat": "Two column format: 'Dd[Mpc] Ddt[Mpc]'",
-    "wfi2033_dt_bic.dat": "CSV format with 'Dt' and 'weight' columns",
-    "B1608_analytic_PDF.txt": "Analytical PDF format (special handling required)"
+    "wfi2033_dt_bic.dat": "CSV format with 'Dt' and 'weight' columns"
   },
   "configuration_info": {
     "version": "1.0",
