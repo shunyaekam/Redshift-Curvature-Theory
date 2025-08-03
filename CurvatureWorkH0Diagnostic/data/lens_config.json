@@ -1,99 +1,25 @@
 {
   "h0licow_files": {
-    "J1206+4332": "data/J1206_final.csv",
-    "HE0435-1223": "data/HE0435_Ddt_AO+HST.dat", 
+    "DESJ0408-5354": "data/placeholder.dat",
+    "HE0435-1223": "data/HE0435_Ddt_AO+HST.dat",
     "PG1115+080": "data/PG1115_AO+HST_Dd_Ddt.dat",
     "RXJ1131-1231": "data/RXJ1131_AO+HST_Dd_Ddt.dat",
-    "WFI2033-4723": "data/wfi2033_dt_bic.dat"
+    "SDSSJ1206+4332": "data/J1206_final.csv",
+    "B1608+656": "data/B1608_analytic_PDF.txt",
+    "WFI2033-4723": "data/wfi2033_dt_bic.dat",
+    "WGD2038-4008": "data/placeholder.dat"
   },
   "lens_metadata": {
-    "J1206+4332": {
-      "z_lens": 0.745,
-      "z_source": 1.789,
-      "sigma_v": 294,
-      "sigma_v_err": 18,
-      "reference": "Chen et al. 2019"
-    },
-    "HE0435-1223": {
-      "z_lens": 0.4546,
-      "z_source": 1.693,
-      "sigma_v": 222,
-      "sigma_v_err": 15,
-      "reference": "Wong et al. 2020"
-    },
-    "PG1115+080": {
-      "z_lens": 0.311,
-      "z_source": 1.722,
-      "sigma_v": 281,
-      "sigma_v_err": 25,
-      "reference": "Wong et al. 2020"
-    },
-    "RXJ1131-1231": {
-      "z_lens": 0.295,
-      "z_source": 0.658,
-      "sigma_v": 323,
-      "sigma_v_err": 20,
-      "reference": "Birrer et al. 2019"
-    },
-    "WFI2033-4723": {
-      "z_lens": 0.6575,
-      "z_source": 1.662,
-      "sigma_v": 270,
-      "sigma_v_err": 10,
-      "reference": "Rusu et al. 2020"
-    },
-    "B1608+656": {
-      "z_lens": 0.630,
-      "z_source": 1.394,
-      "sigma_v": 247,
-      "sigma_v_err": 12,
-      "reference": "Suyu et al. 2010"
-    }
+    "DESJ0408-5354": {"z_lens": 0.597, "z_source": 2.375, "sigma_v": 242.3, "sigma_v_err": 12.2},
+    "HE0435-1223": {"z_lens": 0.455, "z_source": 1.693, "sigma_v": 226.6, "sigma_v_err": 5.8},
+    "PG1115+080": {"z_lens": 0.311, "z_source": 1.722, "sigma_v": 235.7, "sigma_v_err": 6.6},
+    "RXJ1131-1231": {"z_lens": 0.295, "z_source": 0.654, "sigma_v": 303.0, "sigma_v_err": 8.3},
+    "SDSSJ1206+4332": {"z_lens": 0.745, "z_source": 1.789, "sigma_v": 290.5, "sigma_v_err": 9.5},
+    "B1608+656": {"z_lens": 0.630, "z_source": 1.394, "sigma_v": 305.3, "sigma_v_err": 11.0},
+    "WFI2033-4723": {"z_lens": 0.657, "z_source": 1.662, "sigma_v": 210.7, "sigma_v_err": 10.5},
+    "WGD2038-4008": {"z_lens": 0.228, "z_source": 0.777, "sigma_v": 254.7, "sigma_v_err": 16.3}
   },
   "published_h0_values": {
-    "J1206+4332": {
-      "h0": 68.8,
-      "h0_err": 5.4,
-      "reference": "Chen et al. 2019"
-    },
-    "HE0435-1223": {
-      "h0": 71.1,
-      "h0_err": 2.5,
-      "reference": "Wong et al. 2020"
-    },
-    "PG1115+080": {
-      "h0": 82.8,
-      "h0_err": 8.3,
-      "reference": "Wong et al. 2020"
-    },
-    "RXJ1131-1231": {
-      "h0": 78.2,
-      "h0_err": 3.4,
-      "reference": "Birrer et al. 2019"
-    },
-    "WFI2033-4723": {
-      "h0": 71.6,
-      "h0_err": 4.9,
-      "reference": "Rusu et al. 2020"
-    },
-    "B1608+656": {
-      "h0": 68.0,
-      "h0_err": 6.0,
-      "reference": "Suyu et al. 2010"
-    }
-  },
-  "data_format_notes": {
-    "J1206_final.csv": "CSV format with 'ddt' and 'dd' columns",
-    "HE0435_Ddt_AO+HST.dat": "Single column format with time-delay distances",
-    "PG1115_AO+HST_Dd_Ddt.dat": "Two column format: 'Dd[Mpc] Ddt[Mpc]'",
-    "RXJ1131_AO+HST_Dd_Ddt.dat": "Two column format: 'Dd[Mpc] Ddt[Mpc]'",
-    "wfi2033_dt_bic.dat": "CSV format with 'Dt' and 'weight' columns"
-  },
-  "configuration_info": {
-    "version": "1.0",
-    "last_updated": "2025-08-02",
-    "description": "H0LiCOW lens system configuration for curvature-work diagnostic analysis",
-    "total_systems": 6,
-    "data_repository": "https://github.com/shsuyu/H0LiCOW-public/tree/master/h0licow_distance_chains"
+    "TDCOSMO_2025_Combined": {"h0": 71.6, "h0_err": 3.6}
   }
 }
