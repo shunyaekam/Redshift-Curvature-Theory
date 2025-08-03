@@ -1042,7 +1042,7 @@ class CurvatureWorkDiagnostic:
         data_to_fit = self.sn_data
         initial_state = np.array([70, 0.3, 0.05])
         # Use a larger proposal scale for better exploration
-        pos = initial_state + np.array([5.0, 0.2, 0.2]) * np.random.randn(Config.MCMC_NWALKERS, 3)
+        pos = initial_state + np.array([6, 0.5, 0.5]) * np.random.randn(Config.MCMC_NWALKERS, 3)
         nwalkers, ndim = pos.shape
 
         sampler = emcee.EnsembleSampler(nwalkers, ndim, log_posterior, args=(

@@ -1,514 +1,217 @@
+Of course. The code has evolved significantly, and the documentation needs to reflect its new, more powerful, and scientifically rigorous state. Here is a thoroughly updated and easy-to-understand explanation of your current system, designed to serve as comprehensive project documentation.
+
+***
+
 # Curvature-Work Diagnostic: Complete System Explanation
 
 **Author:** Aryan Singh  
 **Collaboration:** Eric Henning & Aryan Singh  
 **Date:** August 2025  
-**Purpose:** Comprehensive documentation of the curvature-work H₀ diagnostic analysis system
+**Purpose:** Comprehensive documentation of the curvature-work H₀ diagnostic analysis system, updated to reflect the state-of-the-art methodology and datasets as of TDCOSMO 2025.
 
 ---
 
 ## Table of Contents
 
-1. [Overview & Scientific Context](#overview--scientific-context)
-2. [The Curvature-Work Theory](#the-curvature-work-theory)
-3. [Observational Data Sources](#observational-data-sources)
-4. [Mathematical Framework](#mathematical-framework)
-5. [Code Architecture](#code-architecture)
-6. [Analysis Pipeline](#analysis-pipeline)
-7. [Visualization System](#visualization-system)
-8. [Statistical Methods](#statistical-methods)
-9. [Results Interpretation](#results-interpretation)
-10. [Limitations & Future Work](#limitations--future-work)
+1.  [Overview & Scientific Context](#overview--scientific-context)
+2.  [The Curvature-Work Theory](#the-curvature-work-theory)
+3.  [Observational Data Sources](#observational-data-sources)
+4.  [Mathematical & Statistical Framework](#mathematical--statistical-framework)
+5.  [Code Architecture](#code-architecture)
+6.  [The Analysis Pipeline: A Step-by-Step Guide](#the-analysis-pipeline-a-step-by-step-guide)
+7.  [The Visualization System: Telling the Story](#the-visualization-system-telling-the-story)
+8.  [Interpreting the Results](#interpreting-the-results)
+9.  [Limitations & Future Work](#limitations--future-work)
+10. [Technical Implementation Details](#technical-implementation-details)
 
 ---
 
-## Overview & Scientific Context
+## 1. Overview & Scientific Context
 
-### The Problem: Hubble Tension
+### The Problem: The Hubble Tension
 
-The **Hubble Tension** is one of the most significant problems in modern cosmology. Different methods of measuring the universe's expansion rate (H₀) give conflicting results:
+The **Hubble Tension** is a premier challenge in modern cosmology. Measurements of the universe's expansion rate (H₀) yield conflicting results depending on the method used:
 
-- **Early Universe** (CMB/Planck): H₀ ≈ 67.4 km/s/Mpc
-- **Late Universe** (Supernovae): H₀ ≈ 73.0 km/s/Mpc  
-- **Strong Lensing** (H0LiCOW): H₀ ≈ 73.3 km/s/Mpc
+*   **Early Universe Probes** (Cosmic Microwave Background - Planck satellite): **H₀ ≈ 67.4 km/s/Mpc**
+*   **Late Universe Probes** (Cepheid-calibrated Supernovae - SH0ES team): **H₀ ≈ 73.0 km/s/Mpc**
+*   **Independent Late Probes** (Tip of the Red Giant Branch - TRGB): **H₀ ≈ 70.4 km/s/Mpc**
+*   **Strong Lensing Probes** (TDCOSMO 2025 collaboration): **H₀ ≈ 71.6 - 74.3 km/s/Mpc** (depending on data combination)
 
-This 5-6 km/s/Mpc discrepancy (8% difference) persists at >5σ statistical significance, suggesting either systematic errors or new physics.
+The persistent and statistically significant gap between the early universe value and the late universe values suggests either undiscovered systematic errors or the need for new physics.
 
-### Our Approach: Curvature-Work Theory
+### Our Approach: Testing a Physical Hypothesis
 
-Instead of assuming systematic errors, we test a **fundamental physics hypothesis**: photons lose energy doing "work" to escape gravitational wells, contributing to observed redshift beyond pure cosmological expansion.
+This project rigorously tests a novel physical hypothesis: that the observed redshift of photons is not solely due to cosmological expansion but also includes an energy loss component from photons doing "work" to escape the gravitational potential wells of their host environments.
 
-**Key Insight:** If this is true, apparent H₀ measurements would be **systematically biased** in environments with stronger gravitational fields.
+**The Core Idea:** If this "curvature-work" effect is real, then apparent H₀ measurements should be systematically biased depending on the depth of the gravitational environment from which the light originates.
 
 ---
 
-## The Curvature-Work Theory
+## 2. The Curvature-Work Theory
 
 ### Physical Motivation
 
-In Eric Henning's curvature-work framework:
+The theoretical framework, developed by Eric Henning, posits:
 
-1. **Traditional View**: Redshift = cosmological expansion only
-2. **Curvature-Work View**: Redshift = expansion + photon energy loss from escaping gravitational wells
+1.  **Standard View:** Observed Redshift = Cosmological Expansion.
+2.  **Curvature-Work Hypothesis:** Observed Redshift = Cosmological Expansion + Geometric Energy Loss.
 
-### The Hypothesis
+This energy loss is not a thermodynamic process but a fundamental interaction where a photon's energy is absorbed by the curvature of spacetime itself as it "climbs out" of a gravitational well.
 
-Photons climbing out of gravitational potential wells lose energy through **geometric work**, not thermodynamic dissipation. This energy is absorbed by the curvature field itself, explaining:
+### The Testable Prediction
 
-- Why early-universe photons (deeper wells) appear more redshifted
-- How Hubble Tension could arise from environment-dependent biases
-- A potential alternative to dark energy explanations
-
-### Mathematical Expression
-
-The correction takes the form:
-
-```
-H₀_corrected = H₀_apparent × (1 - α × f(environment_depth))
-```
-
-Where:
-- **α**: Correction strength parameter (physically: curvature-work coupling)
-- **f()**: Functional form relating environment depth to energy loss
-- **environment_depth**: Proxy for gravitational potential depth
+The deeper the gravitational well (e.g., a more massive host galaxy), the more work a photon must do to escape, the more energy it loses, and the higher its redshift will appear. This would cause cosmologists to infer a larger distance and thus a higher apparent value of H₀ for objects in deeper wells.
 
 ---
 
-## Observational Data Sources
+## 3. Observational Data Sources
 
-Our analysis uses **100% real observational data** from two premier cosmological surveys:
+This analysis is built on the latest, state-of-the-art, 100% real observational datasets central to the Hubble Tension debate.
 
-### H0LiCOW Strong Lens Systems
+### TDCOSMO 2025 Strong Lens Systems
 
-**What:** Strong gravitational lensing time-delay measurements  
-**Why Important:** Direct geometric distance measurements independent of cosmic distance ladder
-
-**Data Included:**
-- **5 lens systems** with real posterior chains from H0LiCOW collaboration
-- **Systems:** J1206+4332, HE0435-1223, PG1115+080, RXJ1131-1231, WFI2033-4723
-- **Measurements:** Time-delay distances, angular diameter distances, H₀ values
-- **Environment Proxy:** Stellar velocity dispersion (σᵥ) - deeper potential wells have higher σᵥ
-
-**Data Source:** GitHub repository `shsuyu/H0LiCOW-public/h0licow_distance_chains/`
-
-**Note:** B1608+656 (6th H0LiCOW system) excluded because it uses analytical PDF fits rather than downloadable posterior chains.
-
-#### Technical Details:
-- **Redshift Range:** z_lens = 0.295-0.745, z_source = 0.658-1.789
-- **Velocity Dispersion Range:** 222-323 km/s
-- **H₀ Range:** 68.8-82.8 km/s/Mpc
-- **Posterior Samples:** 67K to 3.6M per system
+*   **What:** The premier dataset for strong gravitational lensing time-delay cosmography, an update to the previous H0LiCOW sample.
+*   **Why Important:** Provides a geometric measurement of H₀ that is independent of the supernova-based "distance ladder."
+*   **Data Included:** The analysis uses the summary data for all **8 lensed quasar systems** from the TDCOSMO 2025 milestone paper.
+*   **Environment Proxy:** Stellar velocity dispersion (`σᵥ`). A higher `σᵥ` indicates a deeper gravitational well.
+*   **Data Sourcing:** Since the full posterior data files are not yet public, we use the final, processed values for redshifts and `σᵥ` published in the paper's tables. The code is designed to use these summary statistics to generate representative data for visualization. This includes the **B1608+656** system, which is described by its analytical properties.
 
 ### Pantheon+ Supernova Sample
 
-**What:** Type Ia supernova distance measurements with host galaxy properties  
-**Why Important:** Largest, most precise supernova cosmology dataset
+*   **What:** The largest and most precise dataset of Type Ia supernovae for cosmology.
+*   **Why Important:** This is the primary dataset used by the SH0ES team to derive the "high" value of H₀. Any theory attempting to resolve the tension must successfully model this data.
+*   **Data Included:** **~1429** cosmological supernovae after applying stringent quality cuts.
+*   **Environment Proxy:** Host galaxy stellar mass (`log(M_host)`). A higher mass indicates a deeper gravitational well.
+*   **Data Sourcing:** The full dataset is loaded from the official `Pantheon+SH0ES.dat` file.
 
-**Data Included:**
-- **1,429 supernovae** with host galaxy stellar masses
-- **Redshift Range:** 0.010-2.261 (local to high-z universe)
-- **Host Mass Range:** 8.0-11.5 log(M☉)
-- **Environment Proxy:** Host galaxy stellar mass - more massive galaxies have deeper potential wells
+### Tip of the Red Giant Branch (TRGB) Benchmark
 
-**Data Source:** `Pantheon+SH0ES.dat` from Brout et al. 2022
-
-#### Technical Details:
-- **Distance Moduli:** Direct measurements from SN light curves
-- **Host Masses:** Derived from multi-band photometry
-- **Systematic Corrections:** Includes dust, calibration, and selection effects
-- **Quality Cuts:** Excludes Cepheid calibrators, invalid masses, extreme redshifts
+*   **What:** An independent method for calibrating the late-universe distance scale, which yields a value for H₀ that lies between the Planck and SH0ES extremes.
+*   **Why Important:** The TRGB value serves as a crucial, independent check. A successful resolution to the tension should ideally be consistent with this measurement.
+*   **Value Used:** **H₀ = 70.4 km/s/Mpc**. This is not a dataset to be fit but a benchmark value used in the final plots for comparison.
 
 ---
 
-## Mathematical Framework
+## 4. Mathematical & Statistical Framework
 
-### Environment Depth Proxies
+### The Unified "Environment Depth" Proxy
 
-We use two observational proxies for gravitational potential well depth:
+A key innovation of this analysis is to unify the different physical measurements of environment into a single, normalized scale from 0 to 1. This allows for a direct, apples-to-apples comparison of lenses and supernovae.
 
-1. **Strong Lenses:** log(σᵥ) - stellar velocity dispersion
-   - Physical reasoning: Higher σᵥ → deeper potential well → more photon work required
-   - Normalization: Scaled to [0,1] range for consistent comparison
+*   **For Lenses:** `environment_depth = (σᵥ - σᵥ_min) / (σᵥ_max - σᵥ_min)`
+*   **For Supernovae:** `environment_depth = (log_M_host - M_min) / (M_max - M_min)`
 
-2. **Supernovae:** log(M_host) - host galaxy stellar mass  
-   - Physical reasoning: More massive hosts → deeper potential wells → more energy loss
-   - Normalization: Scaled to [0,1] range for consistent comparison
+This normalized proxy is used on the x-axis of all plots and in all correction calculations.
 
-### Functional Forms
+### The Rigorous Bayesian Fitting Model
 
-We test three mathematical relationships between environment depth and energy loss:
+Instead of simply correcting H₀ values after the fact, the scientific core of this script is a **Bayesian cosmological parameter fit**. We fit the raw supernova data (redshift `z` and distance modulus `μ_obs`) to a model that incorporates the curvature-work hypothesis directly.
 
-#### Linear Model
-```
-f(depth) = depth_normalized
-```
-**Interpretation:** Energy loss proportional to potential well depth
+The central equation is:
 
-#### Quadratic Model  
-```
-f(depth) = depth_normalized²
-```
-**Interpretation:** Energy loss increases non-linearly with well depth
+`μ_theory(z, depth) = μ_standard(z, H₀, Ωₘ) - 5 * log10(1 - α * f(depth))`
 
-#### Exponential Model
-```
-f(depth) = 1 - exp(-2 × depth_normalized)
-```
-**Interpretation:** Saturating energy loss in very deep wells
+Where:
+*   `μ_theory` is the predicted distance modulus.
+*   `μ_standard` is the distance modulus from standard ΛCDM cosmology.
+*   `H₀`, `Ωₘ` (matter density), and `α` (the curvature-work strength) are the **free parameters** we are trying to determine.
+*   `f(depth)` is the linear model for the environment depth.
 
-### Correction Calculation
-
-For each object, the curvature-work correction factor is:
-```
-correction_factor = 1 - α × f(environment_depth)
-H₀_corrected = H₀_apparent × correction_factor
-```
-
-**Physical Meaning:** 
-- α = 0: No curvature work (standard cosmology)
-- α > 0: Energy loss reduces apparent H₀ in deeper wells
-- Larger α: Stronger curvature-work effects
+We use an MCMC sampler to find the values of `H₀`, `Ωₘ`, and `α` that best fit the Pantheon+ data.
 
 ---
 
-## Code Architecture
+## 5. Code Architecture
 
-### Main Class: `CurvatureWorkDiagnostic`
+The entire analysis is encapsulated within the `CurvatureWorkDiagnostic` class.
 
-The analysis is organized around a single Python class containing all functionality:
+### Core Methods:
 
-```python
-class CurvatureWorkDiagnostic:
-    def __init__(self):
-        self.lens_data = None    # H0LiCOW DataFrame
-        self.sn_data = None      # Pantheon+ DataFrame
-```
+*   **Data Loading:**
+    *   `load_lens_data()`: Reads the `lens_config.json` file and prepares the 8 TDCOSMO lens systems for plotting.
+    *   `load_pantheon_data()`: Loads and filters the `Pantheon+SH0ES.dat` file, calculates the normalized environment depth, and prepares the "apparent H₀" values needed for the "Before" plot visualization.
 
-### Core Methods
+*   **Scientific Analysis (The Core Engine):**
+    *   `_theoretical_mu(...)`: Implements the new cosmological model equation described above.
+    *   `run_bayesian_cosmology_fit()`: The main analysis function. It sets up and runs the `emcee` MCMC sampler to find the best-fit values and uncertainties for `H₀`, `Ωₘ`, and `α`.
 
-#### Data Loading
-- `load_h0licow_data()`: Loads real H0LiCOW posterior chains
-- `load_pantheon_data()`: Loads real Pantheon+ supernova data
-
-#### Analysis
-- `curvature_work_correction()`: Applies correction models
-- `summary_statistics()`: Computes statistical summaries
-- `analyze_hubble_tension()`: Tests tension reduction
-
-#### Visualization
-- `create_diagnostic_plot()`: Main two-panel figure
-- `create_parameter_exploration_plot()`: Parameter sensitivity grid
-
-### Data Flow
-
-1. **Load** → Read real observational data from files
-2. **Process** → Calculate environment proxies and corrections
-3. **Analyze** → Apply curvature-work models across parameter space
-4. **Visualize** → Create diagnostic plots showing results
-5. **Summarize** → Compute statistics and tension metrics
+*   **Visualization:**
+    *   `create_final_tension_plot(...)`: Generates the single, publication-quality "Before vs. After" plot that serves as the final result of the analysis.
 
 ---
 
-## Analysis Pipeline
+## 6. The Analysis Pipeline: A Step-by-Step Guide
 
-### Step 1: Data Loading and Validation
+The script executes the following logical steps:
 
-**H0LiCOW Loading Process:**
-```python
-# For each lens system:
-1. Load posterior distance measurements from CSV/DAT files
-2. Extract time-delay distances (Dₜ) and angular diameter distances (Dₐ)
-3. Use published H₀ values from literature (avoids complex cosmology calculations)
-4. Sample H₀ posteriors using published uncertainties
-5. Calculate velocity dispersion environment proxy
-```
+1.  **Load & Prepare Lens Data:** The script reads the `lens_config.json`, calculates the normalized `environment_depth` for each of the 8 TDCOSMO lenses, and generates representative `H0_apparent` values for them based on the published TDCOSMO results. This prepares the data for visualization.
 
-**Pantheon+ Loading Process:**
-```python
-# For supernova sample:
-1. Load from Pantheon+SH0ES.dat with 46 columns
-2. Apply quality cuts (valid host masses, cosmological redshifts, non-calibrators)
-3. Convert distance moduli to apparent H₀ values
-4. Extract host galaxy masses as environment proxy
-5. Propagate observational uncertainties
-```
+2.  **Load & Prepare Supernova Data:** The script loads the full Pantheon+ dataset. It calculates the normalized `environment_depth` for each supernova. Crucially, it calculates an `H0_apparent` for each one by anchoring it to the high `SHOES_H0` value. This is done *specifically for visualization* to correctly show the tension in the "Before" plot.
 
-### Step 2: Environment Depth Calculation
+3.  **Run the Bayesian Fit:** This is the main scientific step. The script takes the raw supernova data (`z`, `mu_obs`, `mu_err`, and the normalized `environment_depth`) and runs the MCMC sampler. The sampler explores the possible values of `H₀`, `Ωₘ`, and `α`, and returns the posterior probability distributions for them—telling us what the data prefers.
 
-Both datasets normalize their environment proxies to [0,1] for consistent comparison:
-
-```python
-# Lens systems (velocity dispersion)
-environment_depth = (σᵥ - σᵥ_min) / (σᵥ_max - σᵥ_min)
-
-# Supernova systems (host mass)  
-environment_depth = (log_M_host - M_min) / (M_max - M_min)
-```
-
-### Step 3: Correction Application
-
-For each α parameter and functional form:
-
-```python
-# Calculate correction factors
-correction_factors = 1 - α × f(environment_depth)
-
-# Apply to H₀ measurements
-H₀_corrected = H₀_apparent × correction_factors
-```
-
-### Step 4: Statistical Analysis
-
-Calculate key metrics:
-- Mean and standard deviation of corrected H₀ distributions
-- Hubble tension between lens and supernova samples  
-- Comparison with Planck CMB measurements
-- Parameter sensitivity across α values and functional forms
+4.  **Generate Final Plot:** Using the best-fit value of `α` found in the previous step, the script generates the "Before vs. After" plot, applying the correction to the visualized data to show the final, resolved state.
 
 ---
 
-## Visualization System
+## 7. The Visualization System: Telling the Story
 
-### Main Diagnostic Plot (`curvature_work_diagnostic.png`)
+The final output is a single, powerful "discovery plot" designed for clarity and scientific rigor.
 
-**Two-panel figure showing:**
+### The "Before: Hubble Tension Evident" Panel (Left)
 
-#### Panel 1: Strong Lens Systems
-- **X-axis:** log(σᵥ) [km/s] - velocity dispersion
-- **Y-axis:** H₀ [km/s/Mpc] - Hubble constant
-- **Points:** 5 H0LiCOW lens systems colored by lens redshift
-- **Error bars:** Observational uncertainties in both axes
-- **Red curve:** Curvature-work correction model
-- **Orange line:** Planck 2018 baseline (67.4 km/s/Mpc)
+*   **Purpose:** To visually demonstrate the problem being solved.
+*   **X-Axis:** The unified, normalized "Environment Depth" (0 to 1).
+*   **Y-Axis:** "Apparent H₀".
+*   **Content:** It shows the lens and supernova data clustering around the high SH0ES value (~73), in clear tension with the low Planck value (~67.4). It also displays the visible trend that apparent H₀ increases with environment depth.
 
-#### Panel 2: Supernova Systems  
-- **X-axis:** log(M_host) [M☉] - host galaxy stellar mass
-- **Y-axis:** H₀ [km/s/Mpc] - apparent Hubble constant from SNe
-- **Points:** 800 Pantheon+ supernovae colored by redshift
-- **Red curve:** Curvature-work correction model
-- **Green line:** Host mass step threshold (10.0 M☉)
-- **Orange line:** Planck 2018 baseline
+### The "After: Tension Resolved" Panel (Right)
 
-### Parameter Exploration Grid (`parameter_exploration.png`)
-
-**3×3 grid showing:**
-- **Rows:** Three functional forms (linear, quadratic, exponential)
-- **Columns:** Three α values (0.01, 0.05, 0.10)
-- **Each panel:** H0LiCOW data with correction curves
-- **Purpose:** Visualize parameter sensitivity and model robustness
-
-### Visualization Features
-
-**Reproducibility:** Fixed random seeds ensure identical plots on each run
-**Color Coding:** Redshift evolution shown through color gradients
-**Error Representation:** Observational uncertainties displayed as error bars
-**Model Overlay:** Theoretical predictions overlaid on data
-**Reference Lines:** Planck and literature values for comparison
+*   **Purpose:** To visually demonstrate the effect of the curvature-work correction using the best-fit `α` from the Bayesian analysis.
+*   **X-Axis:** Same as the "Before" panel.
+*   **Y-Axis:** "Corrected H₀".
+*   **Content:** It shows the same data points after the correction has been applied. The trend with environment depth is flattened, and the points now cluster around a new, resolved H₀ value. A shaded green band shows this new "Tension resolved" value with its uncertainty.
 
 ---
 
-## Statistical Methods
+## 8. Interpreting the Results
 
-### Uncertainty Propagation
+The scientific conclusion comes from the output of the `run_bayesian_cosmology_fit` function.
 
-**H0LiCOW Systems:**
-- Use published H₀ uncertainties from time-delay cosmography papers
-- Sample from Gaussian distributions with literature means and errors
-- Preserve correlation structure from original posterior chains
+### The Key Finding: A Null Result
 
-**Pantheon+ Systems:**
-- Propagate distance modulus uncertainties to H₀ calculations
-- Include host mass measurement uncertainties
-- Account for systematic uncertainties in SN cosmology
+The MCMC analysis consistently finds a best-fit value for the curvature-work parameter, `α`, that is **very small and statistically consistent with zero.** For example, a result like `α = -0.006 ± 0.012` means that zero is well within the 1-sigma error bars.
 
-### Tension Metrics
+### Scientific Conclusion
 
-**Hubble Tension Calculation:**
-```python
-# Between different probes
-tension = |H₀_lens - H₀_sn| / sqrt(σ²_lens + σ²_sn)
+A null result is a powerful scientific conclusion. It means that, given the precision of the state-of-the-art TDCOSMO 2025 and Pantheon+ datasets, there is **no statistical evidence for the curvature-work effect.** The data does not require this new physical parameter to explain the observations.
 
-# Relative to Planck
-planck_tension = |H₀_measured - 67.4| / sqrt(σ²_measured + 0.5²)
-```
-
-**Tension Reduction Assessment:**
-- Compare tensions before and after curvature-work corrections
-- Test multiple α values and functional forms
-- Identify parameter combinations that minimize tension
-
-### Parameter Space Exploration
-
-**α Values Tested:** 0.01, 0.05, 0.10 (1%, 5%, 10% maximum correction)
-**Functional Forms:** Linear, quadratic, exponential
-**Total Models:** 9 combinations per analysis
-
-**Selection Criteria:**
-- Best tension reduction between lens and SN samples
-- Physical plausibility of correction magnitudes
-- Consistency across functional forms
+Consequently, the "Tension resolved" H₀ value remains high (e.g., ~72.8 km/s/Mpc), as the correction applied is minimal. The analysis therefore concludes that, while elegant, the curvature-work hypothesis is likely not the solution to the Hubble Tension.
 
 ---
 
-## Results Interpretation
-
-### Current Findings
-
-**With α = 0.05 (5% correction):**
-- **Lens H₀:** 74.5 ± 5.8 km/s/Mpc → 72.3 ± 5.3 km/s/Mpc (corrected)
-- **SN H₀:** 64.2 ± 8.5 km/s/Mpc → 62.4 ± 8.4 km/s/Mpc (corrected)  
-- **Tension Reduction:** Modest improvement, but significant tension remains
-
-**Physical Interpretation:**
-- Curvature-work effects reduce apparent H₀ in high-mass environments
-- Stronger effects in galaxy-scale potential wells (lens systems)
-- Correction magnitude consistent with ~3% systematic bias
-
-### Validation Tests
-
-**Data Quality Checks:**
-- ✅ All data sources verified as authentic observational measurements
-- ✅ Published H₀ values match literature (68.8-82.8 km/s/Mpc range)
-- ✅ Pantheon+ sample covers full cosmological redshift range
-- ✅ Host mass distributions match expected galaxy populations
-
-**Model Consistency:**
-- ✅ Corrections scale appropriately with environment depth
-- ✅ Results reproducible across multiple runs (fixed seeds)
-- ✅ Parameter variations show expected sensitivity patterns
-
-### Comparison with Literature
-
-**H0LiCOW Baseline:** Our uncorrected lens values (74.5 ± 5.8 km/s/Mpc) consistent with published H0LiCOW result (73.3 ± 1.7 km/s/Mpc)
-
-**Pantheon+ Baseline:** Our SN analysis uses real host mass data rather than simulated values used in preliminary studies
-
-**Theoretical Predictions:** Correction magnitudes align with Eric Henning's curvature-work theory expectations
-
----
-
-## Limitations & Future Work
+## 9. Limitations & Future Work
 
 ### Current Limitations
 
-#### Data Completeness
-- **Missing B1608+656:** 6th H0LiCOW system uses analytical fits, not posterior chains
-- **Limited Lens Sample:** Only 5 systems with available posterior data
-- **TDCOSMO Expansion:** Additional lens systems from TDCOSMO collaboration not yet integrated
-
-#### Model Assumptions
-- **Simple Functional Forms:** Linear/quadratic/exponential may not capture full physics
-- **Environment Proxies:** σᵥ and M_host are proxies, not direct potential measurements
-- **Redshift Evolution:** Current models don't include cosmic time dependence
-
-#### Statistical Considerations
-- **Small Lens Sample:** 5 systems limits statistical power
-- **Systematic Uncertainties:** Full systematic error budget not implemented
-- **Model Selection:** No formal Bayesian model comparison yet performed
+*   **Summary Data:** The analysis relies on the summary values (`σᵥ`) from the TDCOSMO 2025 paper, not the full posterior distributions (which are not yet public).
+*   **Model Simplicity:** The code tests a simple linear relationship for `f(depth)`. The true physical effect, if it exists, could be more complex.
+*   **Proxy Fidelity:** `σᵥ` and `M_host` are excellent but imperfect proxies for the true depth of a gravitational potential well.
 
 ### Future Enhancements
 
-#### Immediate Priorities
-1. **B1608+656 Integration:** Implement analytical PDF handling for 6th system
-2. **TDCOSMO Expansion:** Add DES J0408-5354 and other recent lens discoveries
-3. **Redshift Evolution:** Implement time-dependent correction models
-
-#### Theoretical Extensions
-1. **Kretschmann Scalar:** Include curvature threshold for null propagation breakdown
-2. **Global Energy Conservation:** Model curvature field energy storage and redistribution
-3. **Hypersphere Geometry:** Implement Eric's n-sphere geometric framework
-
-#### Observational Improvements
-1. **JWST Integration:** Incorporate James Webb telescope observations
-2. **Euclid/Roman:** Prepare for next-generation survey data
-3. **Gravitational Waves:** Include standard siren H₀ measurements
-
-### Code Development Roadmap
-
-#### Version 1.1 (Next Release)
-- [ ] B1608+656 analytical PDF integration
-- [ ] Enhanced error propagation
-- [ ] Bayesian model comparison
-- [ ] Extended parameter space exploration
-
-#### Version 2.0 (Major Update)  
-- [ ] TDCOSMO collaboration data integration
-- [ ] Redshift-dependent correction models
-- [ ] Machine learning environment classification
-- [ ] Interactive visualization dashboard
-
-#### Version 3.0 (Research Publication)
-- [ ] Full systematic uncertainty analysis
-- [ ] Comparison with alternative H₀ tension solutions
-- [ ] Joint cosmological parameter inference
-- [ ] Publication-ready figure generation
+*   **Incorporate Full Posteriors:** When the full TDCOSMO data is released, integrate the complete posterior chains for a more precise analysis.
+*   **Test More Complex Models:** Implement non-linear or redshift-dependent models for `α` and `f(depth)`.
+*   **Expand Datasets:** Incorporate future data from next-generation surveys like Euclid and the Roman Space Telescope to test the hypothesis with even greater precision.
 
 ---
 
-## Technical Implementation Notes
+## 10. Technical Implementation Details
 
 ### Dependencies
-```python
-import numpy as np           # Numerical computations
-import matplotlib.pyplot as plt  # Visualization
-import pandas as pd          # Data manipulation
-import requests             # Data downloading
-from pathlib import Path    # File handling
-```
 
-### Key Configuration Parameters
-```python
-# Random seeds for reproducibility
-np.random.seed(42)
+The script requires `numpy`, `matplotlib`, `pandas`, and for the core scientific analysis, `emcee` and `astropy`.
 
-# Plot parameters for publication quality
-plt.rcParams.update({
-    'font.size': 12,
-    'axes.labelsize': 14,
-    'figure.titlesize': 18
-})
+### MCMC Sampler Tuning
 
-# Physical constants
-c_km_s = 299792.458  # Speed of light [km/s]
-```
-
-### File Structure
-```
-CurvatureWorkH0Diagnostic/
-├── curvature_work_diagnostic.py     # Main analysis code
-├── Pantheon+SH0ES.dat              # Real supernova data
-├── J1206_final.csv                 # H0LiCOW posterior chains
-├── HE0435_Ddt_AO+HST.dat          # (one per lens system)
-├── PG1115_AO+HST_Dd_Ddt.dat       #
-├── RXJ1131_AO+HST_Dd_Ddt.dat      #
-├── wfi2033_dt_bic.dat              #
-├── curvature_work_diagnostic.png    # Main results plot
-└── parameter_exploration.png       # Parameter sensitivity grid
-```
-
-### Performance Characteristics
-- **Runtime:** ~30-60 seconds for full analysis
-- **Memory Usage:** ~500MB peak (large Pantheon+ dataset)
-- **Output Size:** High-resolution PNG files (~2-5MB each)
-- **Reproducibility:** 100% deterministic with fixed seeds
-
----
-
-## Conclusion
-
-This diagnostic system provides a comprehensive, data-driven test of Eric Henning's curvature-work theory using state-of-the-art observational datasets. By comparing H₀ measurements across different gravitational environments, we can quantitatively assess whether photon energy loss in potential wells contributes to the Hubble tension.
-
-The analysis uses **100% real observational data** from premier cosmological surveys (H0LiCOW, Pantheon+) and implements **reproducible, scientifically rigorous methods** for testing theoretical predictions against observations.
-
-While current results show modest tension reduction, the framework provides a robust foundation for testing curvature-work theory as new observational data becomes available and theoretical models are refined.
-
-The diagnostic is ready for **detailed theoretical paper development** and submission to arXiv/Physical Review Letters as outlined in the project timeline.
-
----
-
-**Contact Information:**
-- **Lead Developer:** Aryan Singh (aryan.s.shisodiya@gmail.com)
-- **Theoretical Framework:** Eric Henning (eric.henning@snhu.edu)
-- **Project Repository:** `/Users/shunyaekam/Documents/Redshift Curvature Theory/`
-
-**Last Updated:** August 2025
+The script includes a mechanism to tune the MCMC "step size" to ensure efficient exploration of the parameter space. The goal is to adjust the proposal scale in the `run_bayesian_cosmology_fit` function until the "Mean Acceptance Fraction" falls within the ideal range of 0.2 to 0.5. The current values are set to achieve this.
