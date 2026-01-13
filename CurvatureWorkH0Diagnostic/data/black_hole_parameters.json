@@ -1,0 +1,24 @@
+{
+  "SgrA": {
+    "name": "Sagittarius A*",
+    "mass_solar": 4.297e6,
+    "mass_uncertainty": 0.012e6,
+    "distance_kpc": 8.178,
+    "distance_uncertainty": 0.013,
+    "spin_dimensionless": 0.9,
+    "spin_range": [0.84, 0.96],
+    "schwarzschild_radius_km": 1.27e7,
+    "photon_sphere_radius_km": 1.905e7,
+    "notes": "EHT 2024 polarized results show organized magnetic fields. High spin suggests significant frame dragging. Photon sphere radius calculated for non-spinning approx (1.5 * Rs) but spin will modify this."
+  },
+  "M87": {
+    "name": "M87*",
+    "mass_solar": 6.5e9,
+    "mass_uncertainty": 0.7e9,
+    "distance_Mly": 55.0,
+    "spin_estimate": ">0.75",
+    "schwarzschild_radius_km": 1.92e10,
+    "photon_sphere_radius_km": 2.88e10,
+    "notes": "Jet launching confirmed. Shadow asymmetry due to Doppler beaming and rotation. Photon sphere radius calculated for non-spinning approx (1.5 * Rs)."
+  }
+}
