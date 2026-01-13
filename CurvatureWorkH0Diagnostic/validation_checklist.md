@@ -1,53 +1,39 @@
-# Critical Validation Checklist for Curvature-Work Detection
+# Validation Protocol
 
-## 🚨 MUST DO BEFORE CLAIMING DETECTION
+**Subject:** Criteria for Detection of Geometric Redshift Effects
 
-### 1. Independent Data Split Test
-- [ ] Split Pantheon+ data into train/test (50/50)
-- [ ] Tune parameters on training set only
-- [ ] Test detection on held-out test set
-- [ ] Result: detection persists? Y/N
+## 1. Introduction
 
-### 2. Parameter Robustness Test  
-- [ ] Vary K₀ by factors of 10: [1e-11, 1e-10, 1e-9]
-- [ ] Vary integration bounds: [0.1-10km, 1-100km, 10-1000km]
-- [ ] Check if α detection depends critically on these choices
-- [ ] Result: robust across parameter space? Y/N
+This document outlines the standardized validation protocol required to claim a detection of geometric redshift effects. Given the potential for systematic errors in cosmological measurements, rigorous adherence to this protocol is mandatory before any results are publicized.
 
-### 3. Host Mass Correlation Check
-- [ ] Plot α correction vs host mass directly
-- [ ] Check if effect is just "massive hosts = brighter SNe"
-- [ ] Test with stellar mass vs total mass scaling
-- [ ] Result: physically reasonable correlation? Y/N
+## 2. Pre-Detection Requirements
 
-### 4. Null Test on Randomized Data
-- [ ] Randomize host masses while keeping other properties
-- [ ] Run same analysis on scrambled data
-- [ ] Should find α ≈ 0 if real physics
-- [ ] Result: null detection on scrambled data? Y/N
+Any potential signal must satisfy the following conditions:
 
-### 5. Literature Cross-Check
-- [ ] Search for known "host galaxy mass effects" in SN literature
-- [ ] Check if this reproduces known systematics
-- [ ] Verify this isn't rediscovering Malmquist bias
-- [ ] Result: genuinely new effect? Y/N
+### 2.1 Independent Data Validation
+*   **Split-Sample Test:** The dataset must be partitioned into independent training and testing sets (e.g., 50/50 split).
+*   **Replicability:** Parameters derived from the training set must yield a statistically significant detection when applied to the testing set.
 
-### 6. Error Analysis
-- [ ] Bootstrap resample data 1000 times
-- [ ] Check distribution of α values
-- [ ] Verify error bars are realistic
-- [ ] Result: error estimate reliable? Y/N
+### 2.2 Parameter Robustness
+*   **Threshold Stability:** The detected signal must persist across a reasonable range of critical curvature thresholds ($K_0$).
+*   **Path Independence:** The result must be robust against variations in the integration bounds used to calculate the curvature depth.
 
-## 🎯 SUCCESS CRITERIA
+### 2.3 Physical Correlation
+*   **Scaling Relation:** The strength of the effect ($\alpha$) must exhibit a physically motivated correlation with host galaxy properties (e.g., Stellar Mass or Velocity Dispersion).
+*   **Null Hypothesis Test:** Randomizing the host galaxy properties (shuffling the mass proxies) must result in a non-detection ($\alpha \approx 0$).
 
-**CLAIM DETECTION ONLY IF:**
-- ✅ Passes independent data test
-- ✅ Robust across parameter choices  
-- ✅ Shows physical correlation pattern
-- ✅ Null test gives α ≈ 0
-- ✅ Not explained by known systematics
-- ✅ Error analysis confirms significance
+### 2.4 Systematic Control
+*   **Literature Review:** The signal must be distinct from known astrophysical systematics such as Malmquist bias, dust extinction, or correlation with local star-formation rates.
+*   **Statistical Significance:** Significance must be established via bootstrap resampling ($N \ge 1000$) to generate reliable confidence intervals.
 
-**TIMELINE:** Complete in 2 weeks before any publication claims.
+## 3. Classification of Results
 
-**IF ANY TEST FAILS:** Downgrade to "interesting systematic investigation" not "breakthrough detection"
+Results are to be classified into one of two categories:
+
+**A. Constraint (Current Status)**
+*   **Criteria:** $\alpha$ is consistent with zero within $3\sigma$, or fails any of the robustness tests.
+*   **Action:** Report as an upper limit on the theory.
+
+**B. Detection**
+*   **Criteria:** $\alpha$ deviates from zero by $>3\sigma$ and passes all validation tests described in Section 2.
+*   **Action:** Proceed to peer review preparation.
